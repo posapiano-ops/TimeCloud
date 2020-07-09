@@ -1,0 +1,80 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #656262;
+  font-family: 'Hack', monospace;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.logo,
+.text__error,
+.text__link {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.text__error {
+  margin-top: -35px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 2rem;
+}
+
+.text__link {
+  margin-top: 5px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 1.4rem;
+}
+
+.logo {
+	margin-top: -120px;
+}
+
+img.logox
+{
+	position: absolute;
+	max-width: 80%;
+	top: 10%;
+	left: 10%;
+}
+
+img.logox:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.logox { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.logox { max-height: 90%; }
+}
